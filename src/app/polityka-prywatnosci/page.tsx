@@ -19,7 +19,7 @@ const SECTIONS: { h: string; p: string[] }[] = [
   {
     h: "2. Jakie dane i po co",
     p: [
-      "Strona nie ma formularzy ani kont użytkowników. Twoje dane (imię, nazwisko, adres e-mail, nazwa firmy, telefon i treść wiadomości) przetwarzam tylko wtedy, gdy sam do mnie napiszesz lub umówisz rozmowę.",
+      "Strona nie ma kont użytkowników. Twoje dane (imię, nazwisko, adres e-mail, nazwa firmy, telefon i treść wiadomości) przetwarzam tylko wtedy, gdy sam do mnie napiszesz lub umówisz rozmowę w kalendarzu.",
       "Przetwarzam je, żeby odpowiedzieć na wiadomość i przygotować ofertę (art. 6 ust. 1 lit. b RODO), a jeśli zawrzemy umowę — żeby ją wykonać i rozliczyć (art. 6 ust. 1 lit. b i c RODO). Korespondencję mogę przechowywać także w celu ewentualnego dochodzenia roszczeń (art. 6 ust. 1 lit. f RODO).",
     ],
   },
@@ -32,13 +32,13 @@ const SECTIONS: { h: string; p: string[] }[] = [
   {
     h: "4. Komu przekazuję dane",
     p: [
-      "Dostawcom usług, z których korzystam: hostingu strony i poczty (Hostinger), poczty e-mail, kalendarza do umawiania rozmów oraz biura rachunkowego — tylko w zakresie niezbędnym do świadczenia usług. Nie sprzedaję danych i nie przekazuję ich w celach marketingowych.",
+      "Dostawcom usług, z których korzystam: hostingu strony i poczty (Hostinger), poczty e-mail, kalendarza do umawiania rozmów (Cal.com, Inc., USA — przekazanie danych na podstawie standardowych klauzul umownych) oraz biura rachunkowego — tylko w zakresie niezbędnym do świadczenia usług. Nie sprzedaję danych i nie przekazuję ich w celach marketingowych.",
     ],
   },
   {
     h: "5. Pliki cookies",
     p: [
-      "Strona nie używa cookies analitycznych ani reklamowych i nie śledzi Twojej aktywności. Serwer może zapisywać standardowe logi techniczne (np. adres IP, czas wizyty) w celu zapewnienia bezpieczeństwa.",
+      "Strona nie używa cookies analitycznych ani reklamowych i nie śledzi Twojej aktywności. Wbudowany kalendarz Cal.com może zapisywać pliki cookies niezbędne do jego działania. Serwer może zapisywać standardowe logi techniczne (np. adres IP, czas wizyty) w celu zapewnienia bezpieczeństwa.",
     ],
   },
   {

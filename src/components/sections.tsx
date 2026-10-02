@@ -3,6 +3,7 @@ import { ArrowRight, Mail, Plus } from "lucide-react";
 import { CONTACT, FAQ, STEPS } from "@/lib/content";
 import { contactHref } from "@/lib/contact";
 import { Reveal } from "./reveal";
+import { CalEmbed } from "./cal-embed";
 
 export function Process() {
   return (
@@ -63,6 +64,45 @@ export function About() {
             Porozmawiajmy o Twojej stronie
             <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
           </a>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+export function Booking() {
+  return (
+    <section id="rozmowa" className="border-t border-line py-24 sm:py-32">
+      <div className="mx-auto grid max-w-6xl items-start gap-12 px-4 sm:px-6 lg:grid-cols-[0.75fr_1.25fr]">
+        <Reveal>
+          <p className="text-xs uppercase tracking-[0.18em] text-clay">Rozmowa</p>
+          <h2 className="mt-3 font-display text-4xl leading-[1.05] sm:text-6xl">
+            Umów 20 minut. <em>Bez zobowiązań.</em>
+          </h2>
+          <p className="mt-6 text-lg leading-relaxed text-ink/75">
+            Wybierz termin w kalendarzu. Porozmawiamy o Twojej firmie, a na koniec usłyszysz, co ma sens, ile to kosztuje i kiedy
+            może być gotowe.
+          </p>
+          <ul className="mt-8 space-y-3 text-ink/80">
+            {["Rozmowa online — wystarczy telefon lub komputer", "Konkretna wycena i termin po rozmowie", "Bez presji i bez ukrytych kosztów"].map((t) => (
+              <li key={t} className="flex gap-3">
+                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-clay" />
+                {t}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-8 text-sm text-muted">
+            Kalendarz się nie wyświetla?{" "}
+            <a href={CONTACT.calUrl} target="_blank" rel="noopener" className="underline underline-offset-4 hover:text-clay">
+              Otwórz go w nowej karcie
+            </a>
+            .
+          </p>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <div className="min-h-[640px] overflow-hidden rounded-3xl border border-line bg-paper p-2 sm:p-4">
+            <CalEmbed className="min-h-[620px]" />
+          </div>
         </Reveal>
       </div>
     </section>

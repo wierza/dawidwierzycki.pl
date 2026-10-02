@@ -2,8 +2,8 @@
 
 export const CONTACT = {
   email: "dawid@wierzycki.pl",
-  // Link do Cal.com na rozmowę o stronie (20 min). Pusty = przycisk otwiera e-mail.
-  calUrl: "",
+  // Wydarzenie Cal.com „Rozmowa o stronie” (kalendarz jest wbudowany w sekcję #rozmowa).
+  calUrl: "https://cal.com/instapara/rozmowa-o-stronie-www",
 };
 
 export const FEATURES = [
