@@ -122,7 +122,7 @@ export const PACKAGES = [
       "Formularz kontaktowy i przycisk do telefonu",
       "Baner cookies i polityka prywatności",
       "Google Analytics i wizytówka Google",
-      "Podstawy SEO: tytuły, opisy, mapa strony",
+      "SEO na start: tytuły i opisy, Google Search Console, dane lokalnej firmy, wizytówka Google",
       "Teksty na podstawie Twojego formularza",
       "Jedna tura poprawek",
       "Nagranie z instrukcją, jak zmieniać treści",
@@ -185,6 +185,10 @@ export const FAQ = [
   {
     q: "Nie mam tekstów ani zdjęć. Co wtedy?",
     a: "Na podstawie formularza przygotuję teksty do Twojej akceptacji. Jeśli wolisz, żebym napisał wszystko od zera po rozmowie — to dodatek za 300 zł. Zdjęcia mogą być z telefonu albo z banku zdjęć.",
+  },
+  {
+    q: "Czy strona będzie widoczna w Google?",
+    a: "W cenie dostajesz SEO na start: tytuły i opisy pod frazy Twoich klientów (np. „fizjoterapeuta Poznań”), zgłoszenie strony w Google Search Console, dane lokalnej firmy dla Google, połączenie z wizytówką Google i szybkie ładowanie. Nikt uczciwy nie zagwarantuje pierwszego miejsca — regularne pozycjonowanie (artykuły, linki, analiza konkurencji) to osobna usługa, którą mogę wycenić.",
   },
   {
     q: "Jakie płatności obsłuży sklep?",
