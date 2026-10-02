@@ -150,7 +150,7 @@ export function Contact() {
       <div className="mx-auto max-w-6xl px-4 text-center sm:px-6">
         <Reveal>
           <h2 className="mx-auto max-w-4xl font-display text-5xl leading-[1.02] sm:text-7xl">
-            Twoja strona może działać <em className="text-clay-soft">za dwa tygodnie.</em>
+            Twoja strona może działać <em className="text-clay-soft">już za tydzień.</em>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg text-paper/70">
             Napisz w dwóch zdaniach, czym zajmuje się Twoja firma. Odpowiem w ciągu jednego dnia roboczego z propozycją

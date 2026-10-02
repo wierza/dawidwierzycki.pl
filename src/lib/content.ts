@@ -113,7 +113,7 @@ export const PACKAGES = [
     name: "Strona",
     price: 1500,
     pilot: 1000,
-    time: "7–10 dni roboczych",
+    time: "7 dni roboczych",
     lead: "Dla firm, które chcą profesjonalnie wyglądać w sieci i dostawać zapytania.",
     items: [
       "Do 5 podstron albo jedna długa strona",
@@ -132,7 +132,7 @@ export const PACKAGES = [
     name: "Sklep",
     price: 3000,
     pilot: null,
-    time: "ok. 14 dni roboczych",
+    time: "14 dni roboczych",
     lead: "Dla firm, które chcą sprzedawać online — produkty, usługi lub pliki do pobrania.",
     items: [
       "Wszystko z pakietu Strona",
@@ -165,14 +165,14 @@ export const CARE = [
 export const STEPS = [
   { title: "Rozmowa", time: "20 minut", text: "Opowiadasz o firmie i klientach. Mówię, co ma sens, ile to kosztuje i kiedy będzie gotowe." },
   { title: "Formularz i zaliczka", time: "1 dzień", text: "Wypełniasz krótki formularz (usługi, zdjęcia, dane). Wpłacasz 50% — rezerwuję termin." },
-  { title: "Budowa", time: "7–14 dni", text: "Buduję stronę lub sklep. W trakcie dostajesz link do podglądu, żeby nic Cię nie zaskoczyło." },
+  { title: "Budowa", time: "strona 7 dni · sklep 14 dni", text: "Buduję stronę lub sklep. W trakcie dostajesz link do podglądu, żeby nic Cię nie zaskoczyło." },
   { title: "Poprawki i start", time: "1–2 dni", text: "Wprowadzam Twoje uwagi, podpinam domenę i Google. Dostajesz nagranie, jak samodzielnie zmieniać treści." },
 ];
 
 export const FAQ = [
   {
     q: "Ile trwa zrobienie strony?",
-    a: "Strona: 7–10 dni roboczych, sklep: ok. 14. Liczę od dnia, w którym dostanę wypełniony formularz i zdjęcia — najczęściej to właśnie materiały decydują o tempie.",
+    a: "Strona: 7 dni roboczych, sklep: 14. Liczę od dnia, w którym dostanę wypełniony formularz i zdjęcia — najczęściej to właśnie materiały decydują o tempie.",
   },
   {
     q: "Kto płaci za domenę i hosting?",

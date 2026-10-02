@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title: "Dawid Wierzycki — strony i sklepy internetowe dla firm",
   description:
-    "Strona albo sklep dla Twojej firmy w 10 dni. Płatności BLIK, RODO, Google Analytics i wizytówka Google w cenie. Strona od 1 500 zł, sklep od 3 000 zł.",
+    "Strona dla Twojej firmy w 7 dni, sklep w 14. Płatności BLIK, RODO, Google Analytics i wizytówka Google w cenie. Strona od 1 500 zł, sklep od 3 000 zł.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "pl_PL",
     url: SITE,
     siteName: "Dawid Wierzycki",
-    title: "Strona albo sklep, który sprzedaje — gotowy w 10 dni",
+    title: "Strona albo sklep, który sprzedaje — gotowy w 7 dni",
     description: "Strony i sklepy internetowe dla małych firm. Płatności, RODO i analityka w cenie.",
     images: [{ url: "/og.jpg", width: 1200, height: 630 }],
   },
