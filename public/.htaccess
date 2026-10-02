@@ -21,9 +21,9 @@ Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains
   RewriteCond %{HTTPS} off [OR]
   RewriteCond %{HTTP_HOST} ^www\. [NC]
   RewriteRule ^(.*)$ https://dawidwierzycki.pl/$1 [L,R=301]
-  # /polityka-prywatnosci → polityka-prywatnosci.html
-  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
-  RewriteRule ^(.+?)/?$ /$1.html [L]
+  # Strony są w folderach (np. /koncepcje/restauracja/index.html) — dopisz końcowy ukośnik
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.*[^/])$ https://dawidwierzycki.pl/$1/ [L,R=301]
 </IfModule>
 
 ErrorDocument 404 /404.html

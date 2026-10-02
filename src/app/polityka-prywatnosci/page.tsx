@@ -5,7 +5,7 @@ import { CONTACT } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Polityka prywatności — Dawid Wierzycki",
-  alternates: { canonical: "/polityka-prywatnosci" },
+  alternates: { canonical: "/polityka-prywatnosci/" },
   robots: { index: false },
 };
 

@@ -142,7 +142,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 border-t border-paper/10 px-4 pt-8 text-sm sm:flex-row sm:px-6">
         <p>© {new Date().getFullYear()} Dawid Wierzycki · strony i sklepy internetowe</p>
         <div className="flex gap-6">
-          <a href="/polityka-prywatnosci" className="hover:text-paper">
+          <a href="/polityka-prywatnosci/" className="hover:text-paper">
             Polityka prywatności
           </a>
           <a href="https://instapara.pl" target="_blank" rel="noopener" className="hover:text-paper">

@@ -107,7 +107,7 @@ export function Work() {
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
             {CONCEPTS.map((c, i) => (
               <Reveal key={c.slug} delay={(i % 2) * 0.1}>
-                <a href={`/koncepcje/${c.slug}`} className="group block">
+                <a href={`/koncepcje/${c.slug}/`} className="group block">
                   <div className="overflow-hidden rounded-2xl border border-ink/10 bg-paper shadow-[0_24px_50px_-30px_rgba(19,32,27,0.45)]">
                     <div className="flex items-center gap-1.5 border-b border-line px-4 py-2.5">
                       <span className="size-2 rounded-full bg-[#e8a598]" />
