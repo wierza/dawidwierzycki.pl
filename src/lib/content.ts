@@ -1,0 +1,178 @@
+// Wszystkie treści strony w jednym miejscu — tu zmieniasz ceny, opisy i FAQ.
+
+export const CONTACT = {
+  email: "dawid@wierzycki.pl",
+  // Link do Cal.com na rozmowę o stronie (20 min). Pusty = przycisk otwiera e-mail.
+  calUrl: "",
+};
+
+export const FEATURES = [
+  "Płatności BLIK i kartą",
+  "Apple Pay i Google Pay",
+  "Automatyczne faktury",
+  "Newsletter i automatyczne maile",
+  "Google Analytics i piksel Meta",
+  "Baner cookies i RODO",
+  "Wizytówka Google",
+  "Świetna wersja na telefon",
+];
+
+export type Project = {
+  slug: string;
+  title: string;
+  client: string;
+  url: string;
+  urlLabel: string;
+  problem: string;
+  solution: string;
+  features: string[];
+  stack: string[];
+  desktop: string;
+  mobile: string;
+  scroll: boolean;
+};
+
+export const PROJECTS: Project[] = [
+  {
+    slug: "sklep",
+    title: "Sklep z e-bookiem „Adwokat w sieci”",
+    client: "InstaPara · sprzedaż produktu cyfrowego",
+    url: "https://sklep.instapara.pl",
+    urlLabel: "sklep.instapara.pl",
+    problem:
+      "Sprzedaż e-booka dla adwokatów bez ręcznej obsługi: bez wysyłania plików, przepisywania danych do faktur i dopisywania ludzi do listy mailingowej.",
+    solution:
+      "Sklep, który sam przyjmuje płatność, wysyła e-book, wystawia fakturę i zapisuje klienta do newslettera — a formularz zamówienia ma tylko trzy pola.",
+    features: [
+      "Płatności BLIK, kartą, Apple Pay i Google Pay",
+      "Krótki formularz: e-mail, imię i nazwisko; dane do faktury tylko na życzenie (ze sprawdzaniem NIP)",
+      "Faktury wystawiane i wysyłane automatycznie z iFirmy",
+      "Zapis do newslettera i seria maili powitalnych w MailerLite",
+      "Google Analytics i piksel Meta z trybem zgód",
+      "Regulamin, polityka prywatności i zgody konsumenckie",
+    ],
+    stack: ["WordPress", "WooCommerce", "Stripe", "iFirma", "MailerLite"],
+    desktop: "/realizacje/sklep-desktop.jpg",
+    mobile: "/realizacje/sklep-mobile.jpg",
+    scroll: false,
+  },
+  {
+    slug: "instapara",
+    title: "Strona agencji marketingowej InstaPara",
+    client: "InstaPara · usługi premium",
+    url: "https://instapara.pl",
+    urlLabel: "instapara.pl",
+    problem:
+      "Agencja pracująca z prawnikami, klinikami i agentami nieruchomości potrzebowała strony, która buduje zaufanie, zanim klient zadzwoni.",
+    solution:
+      "Szybka strona z osobnymi podstronami dla każdej branży, blogiem eksperckim i rezerwacją rozmowy w kalendarzu — w trzech językach.",
+    features: [
+      "Podstrony dla prawników, klinik i nieruchomości",
+      "Blog ekspercki przyjazny Google i wyszukiwarkom AI",
+      "Rezerwacja rozmowy w kalendarzu (Cal.com)",
+      "Opinie z Trustpilota",
+      "Wersje PL, EN i DE",
+      "Baner cookies, Google Analytics i piksel Meta",
+    ],
+    stack: ["Next.js", "React", "Tailwind", "Framer Motion", "Hostinger"],
+    desktop: "/realizacje/instapara-desktop.jpg",
+    mobile: "/realizacje/instapara-mobile.jpg",
+    scroll: true,
+  },
+];
+
+export const PACKAGES = [
+  {
+    name: "Strona",
+    price: 1500,
+    pilot: 1000,
+    time: "7–10 dni roboczych",
+    lead: "Dla firm, które chcą profesjonalnie wyglądać w sieci i dostawać zapytania.",
+    items: [
+      "Do 5 podstron albo jedna długa strona",
+      "Nowoczesny wygląd w kolorach Twojej marki",
+      "Świetna wersja na telefon",
+      "Formularz kontaktowy i przycisk do telefonu",
+      "Baner cookies i polityka prywatności",
+      "Google Analytics i wizytówka Google",
+      "Podstawy SEO: tytuły, opisy, mapa strony",
+      "Teksty na podstawie Twojego formularza",
+      "Jedna tura poprawek",
+      "Nagranie z instrukcją, jak zmieniać treści",
+    ],
+  },
+  {
+    name: "Sklep",
+    price: 3000,
+    pilot: null,
+    time: "ok. 14 dni roboczych",
+    lead: "Dla firm, które chcą sprzedawać online — produkty, usługi lub pliki do pobrania.",
+    items: [
+      "Wszystko z pakietu Strona",
+      "Do 20 produktów z kategoriami",
+      "Płatności BLIK, kartą, Apple Pay i Google Pay",
+      "Wysyłka i koszty dostawy albo produkty cyfrowe",
+      "Maile do klienta o zamówieniu",
+      "Regulamin i polityka sklepu (na wzorze)",
+      "Analityka sprzedaży i piksel Meta",
+      "Zamówienie testowe i szkolenie z obsługi",
+    ],
+  },
+];
+
+export const ADDONS = [
+  { id: "teksty", label: "Teksty pisane od zera", desc: "piszę treści na podstawie rozmowy", price: 300 },
+  { id: "lejek", label: "Lejek z darmowym e-bookiem", desc: "zapis na listę, e-book, seria maili", price: 1500 },
+  { id: "faktury", label: "Automatyczne faktury", desc: "iFirma, Fakturownia lub inFakt", price: 400 },
+  { id: "rezerwacje", label: "Kalendarz rezerwacji", desc: "klient sam umawia wizytę lub rozmowę", price: 300 },
+];
+
+export const EXTRA_PAGE_PRICE = 150;
+
+export const CARE = [
+  { id: "brak", label: "Bez opieki", price: 0, desc: "poprawki według stawki 150 zł/h" },
+  { id: "podstawowa", label: "Opieka podstawowa", price: 99, desc: "aktualizacje, kopie zapasowe, czuwanie nad działaniem" },
+  { id: "pelna", label: "Opieka z poprawkami", price: 149, desc: "jak podstawowa + do 1 h zmian w miesiącu" },
+];
+
+export const STEPS = [
+  { title: "Rozmowa", time: "20 minut", text: "Opowiadasz o firmie i klientach. Mówię, co ma sens, ile to kosztuje i kiedy będzie gotowe." },
+  { title: "Formularz i zaliczka", time: "1 dzień", text: "Wypełniasz krótki formularz (usługi, zdjęcia, dane). Wpłacasz 50% — rezerwuję termin." },
+  { title: "Budowa", time: "7–14 dni", text: "Buduję stronę lub sklep. W trakcie dostajesz link do podglądu, żeby nic Cię nie zaskoczyło." },
+  { title: "Poprawki i start", time: "1–2 dni", text: "Wprowadzam Twoje uwagi, podpinam domenę i Google. Dostajesz nagranie, jak samodzielnie zmieniać treści." },
+];
+
+export const FAQ = [
+  {
+    q: "Ile trwa zrobienie strony?",
+    a: "Strona: 7–10 dni roboczych, sklep: ok. 14. Liczę od dnia, w którym dostanę wypełniony formularz i zdjęcia — najczęściej to właśnie materiały decydują o tempie.",
+  },
+  {
+    q: "Kto płaci za domenę i hosting?",
+    a: "Ty — na swoim koncie, żeby strona zawsze była Twoja. Zwykle to kilkanaście–kilkadziesiąt złotych miesięcznie. Pomagam wybrać i wszystko konfiguruję.",
+  },
+  {
+    q: "Czy będę mógł sam zmieniać treści?",
+    a: "Tak. Strony i sklepy buduję na WordPressie, więc godziny otwarcia, cennik, produkty czy wpisy na blogu zmienisz sam. Dostajesz krótkie nagranie z instrukcją.",
+  },
+  {
+    q: "Nie mam tekstów ani zdjęć. Co wtedy?",
+    a: "Na podstawie formularza przygotuję teksty do Twojej akceptacji. Jeśli wolisz, żebym napisał wszystko od zera po rozmowie — to dodatek za 300 zł. Zdjęcia mogą być z telefonu albo z banku zdjęć.",
+  },
+  {
+    q: "Jakie płatności obsłuży sklep?",
+    a: "BLIK, karty, Apple Pay i Google Pay — przez Stripe albo Przelewy24. Konto płatności zakładasz na swoją firmę, ja je podłączam i testuję.",
+  },
+  {
+    q: "Czy strona będzie zgodna z RODO?",
+    a: "Tak: polityka prywatności, baner cookies, zgody przy formularzach. Regulamin sklepu przygotowuję na sprawdzonym wzorze — przy nietypowej sprzedaży warto dać go jeszcze do przejrzenia prawnikowi.",
+  },
+  {
+    q: "Co, jeśli coś przestanie działać?",
+    a: "W opiece miesięcznej (od 99 zł) pilnuję aktualizacji i kopii zapasowych, więc do awarii zwykle nie dochodzi. Bez opieki poprawki rozliczam według stawki 150 zł za godzinę.",
+  },
+  {
+    q: "Jak wygląda płatność?",
+    a: "50% zaliczki na start i 50% po oddaniu strony. Wystawiam fakturę.",
+  },
+];
