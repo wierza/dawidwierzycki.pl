@@ -81,6 +81,33 @@ export const PROJECTS: Project[] = [
   },
 ];
 
+export const CONCEPTS = [
+  {
+    slug: "restauracja",
+    name: "Bistro Sezon",
+    kind: "Restauracja",
+    desc: "Menu w zakładkach, rezerwacja stolika z wyborem godziny, galeria i mapa dojazdu.",
+  },
+  {
+    slug: "kancelaria",
+    name: "Kancelaria Adwokacka",
+    kind: "Kancelaria prawna",
+    desc: "Specjalizacje, umawianie konsultacji online lub stacjonarnie i treści zgodne z Kodeksem Etyki Adwokackiej.",
+  },
+  {
+    slug: "fizjoterapia",
+    name: "Studio Ruchu",
+    kind: "Gabinet fizjoterapii",
+    desc: "Cennik zabiegów, zespół i rezerwacja wizyty w 4 krokach: zabieg, specjalista, termin, dane.",
+  },
+  {
+    slug: "palarnia",
+    name: "Ziarno & Żar",
+    kind: "Sklep internetowy",
+    desc: "Produkty z filtrami, wybór gramatury i mielenia, koszyk, dostawa do paczkomatu i płatność BLIK.",
+  },
+];
+
 export const PACKAGES = [
   {
     name: "Strona",

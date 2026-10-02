@@ -1,5 +1,5 @@
 import { ArrowUpRight, Check } from "lucide-react";
-import { PROJECTS, type Project } from "@/lib/content";
+import { CONCEPTS, PROJECTS, type Project } from "@/lib/content";
 import { contactHref } from "@/lib/contact";
 import { Reveal } from "./reveal";
 
@@ -92,6 +92,47 @@ export function Work() {
               </Reveal>
             </div>
           ))}
+        </div>
+
+        <div id="koncepcje" className="mt-32 scroll-mt-24">
+          <Reveal>
+            <p className="text-xs uppercase tracking-[0.18em] text-clay">Projekty koncepcyjne</p>
+            <h3 className="mt-3 max-w-3xl font-display text-4xl leading-[1.05] sm:text-5xl">
+              Tak może wyglądać <em>strona Twojej branży.</em>
+            </h3>
+            <p className="mt-4 max-w-2xl text-ink/70">
+              Działające wersje pokazowe dla fikcyjnych firm — kliknij i przetestuj rezerwację, kalendarz czy koszyk.
+            </p>
+          </Reveal>
+          <div className="mt-12 grid gap-8 sm:grid-cols-2">
+            {CONCEPTS.map((c, i) => (
+              <Reveal key={c.slug} delay={(i % 2) * 0.1}>
+                <a href={`/koncepcje/${c.slug}`} className="group block">
+                  <div className="overflow-hidden rounded-2xl border border-ink/10 bg-paper shadow-[0_24px_50px_-30px_rgba(19,32,27,0.45)]">
+                    <div className="flex items-center gap-1.5 border-b border-line px-4 py-2.5">
+                      <span className="size-2 rounded-full bg-[#e8a598]" />
+                      <span className="size-2 rounded-full bg-[#e9cf8f]" />
+                      <span className="size-2 rounded-full bg-[#a9c9a4]" />
+                    </div>
+                    <div className="scrollshot relative aspect-[16/10] overflow-hidden">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={`/koncepcje/miniatury/${c.slug}.jpg`} alt={`${c.name} — podgląd`} loading="lazy" className="absolute left-0 top-0 w-full" />
+                    </div>
+                  </div>
+                  <div className="mt-5 flex items-start justify-between gap-4">
+                    <div>
+                      <p className="text-sm text-muted">{c.kind}</p>
+                      <p className="mt-1 font-display text-3xl">{c.name}</p>
+                    </div>
+                    <span className="mt-2 inline-flex shrink-0 items-center gap-1 text-sm transition-colors group-hover:text-clay">
+                      Otwórz <ArrowUpRight className="size-4" />
+                    </span>
+                  </div>
+                  <p className="mt-2 text-[15px] text-ink/70">{c.desc}</p>
+                </a>
+              </Reveal>
+            ))}
+          </div>
         </div>
 
         <Reveal>
