@@ -2,16 +2,11 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Check, CreditCard, Clock, ShieldCheck } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { contactHref } from "@/lib/contact";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-const CHIPS = [
-  { icon: CreditCard, text: "BLIK · karta · Apple Pay", className: "left-[-18px] top-[16%] sm:left-[-36px]", delay: 0.7 },
-  { icon: Clock, text: "Gotowe w 10 dni", className: "right-[-12px] top-[46%] sm:right-[-30px]", delay: 0.85 },
-  { icon: ShieldCheck, text: "RODO i cookies w cenie", className: "left-[-10px] bottom-[27%] sm:left-[-28px]", delay: 1 },
-];
 
 export function Hero() {
   return (
@@ -103,21 +98,6 @@ export function Hero() {
             </div>
           </div>
 
-          {CHIPS.map(({ icon: Icon, text, className, delay }) => (
-            <motion.div
-              key={text}
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: [0, -6, 0] }}
-              transition={{
-                opacity: { duration: 0.5, delay },
-                y: { duration: 5, delay, repeat: Infinity, ease: "easeInOut" },
-              }}
-              className={`absolute flex items-center gap-2 rounded-full border border-line bg-paper/95 px-4 py-2.5 text-sm shadow-lg backdrop-blur ${className}`}
-            >
-              <Icon className="size-4 text-clay" />
-              {text}
-            </motion.div>
-          ))}
         </motion.div>
       </div>
     </section>
