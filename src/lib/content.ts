@@ -117,6 +117,7 @@ export const PACKAGES = [
     lead: "Dla firm, które chcą profesjonalnie wyglądać w sieci i dostawać zapytania.",
     items: [
       "Do 5 podstron albo jedna długa strona",
+      "Blog gotowy do pisania (liczy się jako 1 z 5 podstron)",
       "Nowoczesny wygląd w kolorach Twojej marki",
       "Świetna wersja na telefon",
       "Formularz kontaktowy i przycisk do telefonu",
@@ -155,6 +156,7 @@ export const ADDONS = [
 ];
 
 export const EXTRA_PAGE_PRICE = 150;
+export const ARTICLE_PRICE = 150;
 
 export const CARE = [
   { id: "brak", label: "Bez opieki", price: 0, desc: "poprawki według stawki 150 zł/h" },
@@ -181,6 +183,10 @@ export const FAQ = [
   {
     q: "Czy będę mógł sam zmieniać treści?",
     a: "Tak. Strony i sklepy buduję na WordPressie, więc godziny otwarcia, cennik, produkty czy wpisy na blogu zmienisz sam. Dostajesz krótkie nagranie z instrukcją.",
+  },
+  {
+    q: "Czy w cenie jest blog?",
+    a: "Tak — blog gotowy do pisania (lista wpisów, kategorie, szablon artykułu) liczy się jako jedna z 5 podstron, a wpisy dodajesz sam. Jeśli nie masz czasu pisać, przygotuję artykuły pod frazy Twoich klientów — 150 zł za tekst (ok. 1 000–1 500 słów).",
   },
   {
     q: "Nie mam tekstów ani zdjęć. Co wtedy?",

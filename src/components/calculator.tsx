@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Minus, Plus, Send } from "lucide-react";
-import { ADDONS, CARE, EXTRA_PAGE_PRICE, PACKAGES } from "@/lib/content";
+import { ADDONS, ARTICLE_PRICE, CARE, EXTRA_PAGE_PRICE, PACKAGES } from "@/lib/content";
 import { contactHref } from "@/lib/contact";
 import { Reveal } from "./reveal";
 import { zl } from "@/lib/format";
@@ -14,6 +14,7 @@ export function Calculator() {
   const [pilot, setPilot] = useState(false);
   const [addons, setAddons] = useState<string[]>([]);
   const [pages, setPages] = useState(0);
+  const [articles, setArticles] = useState(0);
   const [care, setCare] = useState("podstawowa");
 
   const pkg = PACKAGES[base];
@@ -24,8 +25,9 @@ export function Calculator() {
     const l: [string, number][] = [[`Pakiet ${pkg.name}${usePilot ? " (cena pilotażowa)" : ""}`, usePilot ? pkg.pilot! : pkg.price]];
     ADDONS.filter((a) => addons.includes(a.id)).forEach((a) => l.push([a.label, a.price]));
     if (pages) l.push([`Dodatkowe podstrony × ${pages}`, pages * EXTRA_PAGE_PRICE]);
+    if (articles) l.push([`Artykuły na blog × ${articles}`, articles * ARTICLE_PRICE]);
     return { total: l.reduce((s, [, v]) => s + v, 0), lines: l };
-  }, [pkg, usePilot, addons, pages]);
+  }, [pkg, usePilot, addons, pages, articles]);
 
   const careOption = CARE.find((c) => c.id === care)!;
 
@@ -128,6 +130,31 @@ export function Calculator() {
                     type="button"
                     aria-label="Więcej podstron"
                     onClick={() => setPages((n) => Math.min(20, n + 1))}
+                    className="grid size-9 place-items-center rounded-full border border-line hover:border-ink"
+                  >
+                    <Plus className="size-4" />
+                  </button>
+                </div>
+              </div>
+              <div className="mt-3 flex items-center justify-between rounded-2xl border border-line p-4">
+                <div>
+                  <p className="font-medium">Artykuły na blog pod SEO</p>
+                  <p className="text-sm text-muted">ok. 1 000–1 500 słów · {zl(ARTICLE_PRICE)} za artykuł</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <button
+                    type="button"
+                    aria-label="Mniej artykułów"
+                    onClick={() => setArticles((n) => Math.max(0, n - 1))}
+                    className="grid size-9 place-items-center rounded-full border border-line hover:border-ink"
+                  >
+                    <Minus className="size-4" />
+                  </button>
+                  <span className="w-6 text-center tabular-nums">{articles}</span>
+                  <button
+                    type="button"
+                    aria-label="Więcej artykułów"
+                    onClick={() => setArticles((n) => Math.min(20, n + 1))}
                     className="grid size-9 place-items-center rounded-full border border-line hover:border-ink"
                   >
                     <Plus className="size-4" />
