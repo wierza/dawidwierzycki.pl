@@ -4,6 +4,7 @@ import { CONTACT, FAQ, STEPS } from "@/lib/content";
 import { contactHref } from "@/lib/contact";
 import { Reveal } from "./reveal";
 import { CalEmbed } from "./cal-embed";
+import { CookieSettingsButton } from "./tracking";
 
 export function Process() {
   return (
@@ -185,6 +186,7 @@ export function Footer() {
           <a href="/polityka-prywatnosci/" className="hover:text-paper">
             Polityka prywatności
           </a>
+          <CookieSettingsButton className="hover:text-paper" />
           <a href="https://instapara.pl" target="_blank" rel="noopener" className="hover:text-paper">
             InstaPara
           </a>

@@ -7,6 +7,7 @@ import { ADDONS, ARTICLE_PRICE, CARE, EXTRA_PAGE_PRICE, PACKAGES } from "@/lib/c
 import { contactHref } from "@/lib/contact";
 import { Reveal } from "./reveal";
 import { zl } from "@/lib/format";
+import { track } from "@/lib/analytics";
 
 
 export function Calculator() {
@@ -226,6 +227,7 @@ export function Calculator() {
               </p>
               <a
                 href={contactHref("Wycena strony", mailBody)}
+                onClick={() => track("generate_lead", { method: "wycena", pakiet: pkg.name, value: total, currency: "PLN" }, "Lead")}
                 className="mt-7 flex items-center justify-center gap-2 rounded-full bg-clay px-6 py-4 transition-colors hover:bg-paper hover:text-ink"
               >
                 <Send className="size-4" /> Wyślij mi tę wycenę

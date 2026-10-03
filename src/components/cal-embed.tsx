@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { track } from "@/lib/analytics";
 
 const CAL_ORIGIN = "https://app.cal.com";
 const CAL_NAMESPACE = "rozmowa-o-stronie-www";
@@ -85,6 +86,10 @@ export function CalEmbed({ className }: { className?: string }) {
         dark: { "cal-bg": BG_COLOR, "cal-brand": BRAND_COLOR },
       },
     });
+
+    // Główna konwersja: rezerwacja rozmowy w kalendarzu
+    const onBooked = () => track("generate_lead", { method: "cal_rozmowa" }, "Lead");
+    ns("on", { action: "bookingSuccessfulV2", callback: onBooked });
 
     return () => {
       el.innerHTML = "";

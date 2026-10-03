@@ -1,6 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Instrument_Serif, Inter_Tight } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
+import { CookieConsent } from "@/components/cookie-consent";
+import { TrackClicks } from "@/components/tracking";
+import { CONSENT_KEY, GA_ID } from "@/lib/analytics";
 
 const instrument = Instrument_Serif({
   subsets: ["latin", "latin-ext"],
@@ -58,8 +62,22 @@ const jsonLd = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pl" className={`${instrument.variable} ${inter.variable}`}>
+      <head>
+        {/* Tryb zgody Google: domyślnie wszystko wyłączone, włącza się po kliknięciu „Akceptuję” */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+try{if(/(?:^|; )${CONSENT_KEY}=accepted/.test(document.cookie)||localStorage.getItem('${CONSENT_KEY}')==='accepted'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}}catch(e){}`,
+          }}
+        />
+      </head>
       <body>
         {children}
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">{`gtag('js', new Date()); gtag('config', '${GA_ID}');`}</Script>
+        <CookieConsent />
+        <TrackClicks />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </body>
     </html>
