@@ -35,7 +35,7 @@ export type Project = {
 export const PROJECTS: Project[] = [
   {
     slug: "sklep",
-    title: "Sklep z e-bookiem „Adwokat w sieci”",
+    title: "Sklep z e-bookiem „Adwokat w social mediach”",
     client: "InstaPara · sprzedaż produktu cyfrowego",
     url: "https://sklep.instapara.pl",
     urlLabel: "sklep.instapara.pl",
