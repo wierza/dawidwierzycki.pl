@@ -6,6 +6,7 @@ import { Reveal } from "./reveal";
 import { CalEmbed } from "./cal-embed";
 import { CookieSettingsButton } from "./tracking";
 import { Socials } from "./socials";
+import { CertificateBadge } from "./certificate";
 
 export function Process() {
   return (
@@ -58,7 +59,12 @@ export function About() {
               Dlatego razem ze stroną dostajesz to, czego zwykle brakuje: płatności, analitykę, formularze, które naprawdę
               trafiają do Ciebie, i zgodność z RODO. Pracuję bezpośrednio z Tobą — bez pośredników i bez juniorów.
             </p>
+            <p>
+              Programowania uczyłem się na 800-godzinnym bootcampie Full Stack Developer w Kodilli — dlatego oprócz stron
+              na WordPressie robię też rzeczy w kodzie: React, Next.js, Node.js, integracje i bazy danych.
+            </p>
           </div>
+          <CertificateBadge />
           <a
             href={contactHref("Rozmowa o stronie")}
             className="group mt-9 inline-flex items-center gap-2 rounded-full bg-ink px-7 py-4 text-paper transition-colors hover:bg-clay"
