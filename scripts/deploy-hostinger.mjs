@@ -104,7 +104,7 @@ try {
   );
   console.log('✓');
   console.log('\n✅ Deploy zakończony!');
-  console.log('   Strona: https://instapara.pl');
+  console.log('   Strona: https://' + DOMAIN);
   console.log('   Odpowiedź:', JSON.stringify(res.data, null, 2));
 } catch (err) {
   console.error('✗');
