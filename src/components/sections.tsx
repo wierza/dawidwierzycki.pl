@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ArrowRight, Mail, Plus } from "lucide-react";
-import { CONTACT, FAQ, STEPS } from "@/lib/content";
+import { COMPANY, CONTACT, FAQ, STEPS } from "@/lib/content";
 import { contactHref } from "@/lib/contact";
 import { Reveal } from "./reveal";
 import { CalEmbed } from "./cal-embed";
@@ -181,7 +181,12 @@ export function Footer() {
   return (
     <footer className="bg-forest pb-10 text-paper/50">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 border-t border-paper/10 px-4 pt-8 text-sm sm:flex-row sm:px-6">
-        <p>© {new Date().getFullYear()} Dawid Wierzycki · strony i sklepy internetowe</p>
+        <div>
+          <p>© {new Date().getFullYear()} Dawid Wierzycki · strony i sklepy internetowe</p>
+          <p className="mt-1 text-xs text-paper/35">
+            {COMPANY.name} · {COMPANY.street}, {COMPANY.city} · NIP {COMPANY.nip} · REGON {COMPANY.regon}
+          </p>
+        </div>
         <div className="flex gap-6">
           <a href="/polityka-prywatnosci/" className="hover:text-paper">
             Polityka prywatności

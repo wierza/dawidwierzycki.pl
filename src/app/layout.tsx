@@ -51,6 +51,9 @@ const jsonLd = {
   url: SITE,
   email: "dawid@wierzycki.pl",
   image: `${SITE}/dawid.jpg`,
+  legalName: "Instapara Dawid Wierzycki",
+  taxID: "6782866804",
+  address: { "@type": "PostalAddress", streetAddress: "Proszkowa 6", postalCode: "56-100", addressLocality: "Proszkowa", addressCountry: "PL" },
   areaServed: "PL",
   founder: { "@type": "Person", name: "Dawid Wierzycki" },
   makesOffer: [

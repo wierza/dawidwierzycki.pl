@@ -1,5 +1,13 @@
 // Wszystkie treści strony w jednym miejscu — tu zmieniasz ceny, opisy i FAQ.
 
+export const COMPANY = {
+  name: "Instapara Dawid Wierzycki",
+  street: "Proszkowa 6",
+  city: "56-100 Proszkowa",
+  nip: "6782866804",
+  regon: "543687373",
+};
+
 export const CONTACT = {
   email: "dawid@wierzycki.pl",
   // Wydarzenie Cal.com „Rozmowa o stronie” (kalendarz jest wbudowany w sekcję #rozmowa).
@@ -210,6 +218,6 @@ export const FAQ = [
   },
   {
     q: "Jak wygląda płatność?",
-    a: "50% zaliczki na start i 50% po oddaniu strony. Wystawiam fakturę.",
+    a: "50% zaliczki na start i 50% po oddaniu strony. Wystawiam fakturę bez VAT — korzystam ze zwolnienia podmiotowego (art. 113 ust. 1 ustawy o VAT), więc podane ceny są cenami końcowymi.",
   },
 ];
