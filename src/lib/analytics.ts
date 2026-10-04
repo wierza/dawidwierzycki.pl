@@ -1,7 +1,7 @@
 // Analityka: Google Analytics 4 i (opcjonalnie) piksel Meta — oba działają dopiero po zgodzie w banerze cookies.
 export const GA_ID = "G-GV4K1F7LD2";
 // Identyfikator zbioru danych Meta (piksel). Pusty = piksel się nie ładuje.
-export const META_PIXEL_ID = "725765440625522";
+export const META_PIXEL_ID = "1110382261400588";
 
 export const CONSENT_KEY = "dw_cookie_consent";
 
