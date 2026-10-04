@@ -8,6 +8,11 @@ export const COMPANY = {
   regon: "543687373",
 };
 
+export const SOCIALS = [
+  { name: "Facebook", url: "https://www.facebook.com/profile.php?id=61594763895799" },
+  { name: "Instagram", url: "https://www.instagram.com/dawid.wierzycki/", handle: "@dawid.wierzycki" },
+];
+
 export const CONTACT = {
   email: "dawid@wierzycki.pl",
   // Wydarzenie Cal.com „Rozmowa o stronie” (kalendarz jest wbudowany w sekcję #rozmowa).

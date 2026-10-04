@@ -5,6 +5,7 @@ import { contactHref } from "@/lib/contact";
 import { Reveal } from "./reveal";
 import { CalEmbed } from "./cal-embed";
 import { CookieSettingsButton } from "./tracking";
+import { Socials } from "./socials";
 
 export function Process() {
   return (
@@ -65,6 +66,10 @@ export function About() {
             Porozmawiajmy o Twojej stronie
             <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
           </a>
+          <div className="mt-8 flex items-center gap-4">
+            <span className="text-sm text-muted">Obserwuj, co tworzę:</span>
+            <Socials itemClassName="border-line text-ink/70 hover:border-clay hover:text-clay" />
+          </div>
         </Reveal>
       </div>
     </section>
@@ -187,7 +192,8 @@ export function Footer() {
             {COMPANY.name} · {COMPANY.street}, {COMPANY.city} · NIP {COMPANY.nip} · REGON {COMPANY.regon}
           </p>
         </div>
-        <div className="flex gap-6">
+        <div className="flex flex-wrap items-center justify-center gap-6">
+          <Socials itemClassName="border-paper/15 text-paper/60 hover:border-paper hover:text-paper" />
           <a href="/polityka-prywatnosci/" className="hover:text-paper">
             Polityka prywatności
           </a>
