@@ -56,7 +56,7 @@ const jsonLd = {
   address: { "@type": "PostalAddress", streetAddress: "Proszkowa 6", postalCode: "56-100", addressLocality: "Proszkowa", addressCountry: "PL" },
   areaServed: "PL",
   founder: { "@type": "Person", name: "Dawid Wierzycki" },
-  sameAs: ["https://www.facebook.com/profile.php?id=61594763895799", "https://www.instagram.com/dawid.wierzycki/", "https://instapara.pl"],
+  sameAs: ["https://www.facebook.com/profile.php?id=61594763895799", "https://www.instagram.com/dawid.wierzycki/", "https://github.com/wierza", "https://instapara.pl"],
   makesOffer: [
     { "@type": "Offer", name: "Strona internetowa", price: "1500", priceCurrency: "PLN" },
     { "@type": "Offer", name: "Sklep internetowy", price: "3000", priceCurrency: "PLN" },

@@ -11,6 +11,7 @@ export const COMPANY = {
 export const SOCIALS = [
   { name: "Facebook", url: "https://www.facebook.com/profile.php?id=61594763895799" },
   { name: "Instagram", url: "https://www.instagram.com/dawid.wierzycki/", handle: "@dawid.wierzycki" },
+  { name: "GitHub", url: "https://github.com/wierza", handle: "github.com/wierza" },
 ];
 
 export const CONTACT = {
