@@ -19,6 +19,18 @@ Portfolio z ofertą stron i sklepów internetowych dla małych firm. Strona prow
 
 ![Koncepty stron](docs/koncepty.jpg)
 
+## Koncepty stron
+
+Cztery działające wersje pokazowe dla fikcyjnych firm. Każdy koncept to osobna strona z własnymi czcionkami i kolorami, a cała interakcja (rezerwacje, kalendarz, koszyk) działa w przeglądarce.
+
+| Koncept | Branża | Co można przetestować | Na żywo | Kod |
+|---|---|---|---|---|
+| **Bistro Sezon** | restauracja | Menu w zakładkach, rezerwacja stolika z wyborem godziny, galeria, mapa | [otwórz](https://dawidwierzycki.pl/koncepcje/restauracja/) | [restauracja.tsx](https://github.com/wierza/dawidwierzycki.pl/blob/main/src/components/koncepcje/restauracja.tsx) |
+| **Kancelaria Adwokacka** | kancelaria | Specjalizacje, kalendarz konsultacji online i stacjonarnych, FAQ | [otwórz](https://dawidwierzycki.pl/koncepcje/kancelaria/) | [kancelaria.tsx](https://github.com/wierza/dawidwierzycki.pl/blob/main/src/components/koncepcje/kancelaria.tsx) |
+| **Studio Ruchu** | gabinet fizjoterapii | Cennik w zakładkach, zespół, rezerwacja wizyty w 4 krokach | [otwórz](https://dawidwierzycki.pl/koncepcje/fizjoterapia/) | [fizjo.tsx](https://github.com/wierza/dawidwierzycki.pl/blob/main/src/components/koncepcje/fizjo.tsx) |
+| **Ziarno & Żar** | sklep internetowy | Filtry produktów, warianty, koszyk z progiem darmowej dostawy, paczkomat i BLIK | [otwórz](https://dawidwierzycki.pl/koncepcje/palarnia/) | [palarnia.tsx](https://github.com/wierza/dawidwierzycki.pl/blob/main/src/components/koncepcje/palarnia.tsx) |
+
+
 <img src="docs/telefon.jpg" width="260" alt="Wersja na telefon">
 
 ## Technologie
