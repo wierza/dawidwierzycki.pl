@@ -16,13 +16,13 @@ function Showcase({ p }: { p: Project }) {
         </div>
         <div className={`relative aspect-[16/10] overflow-hidden ${p.scroll ? "scrollshot" : ""}`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={p.desktop} alt={`${p.title} — widok na komputerze`} loading="lazy" className="absolute left-0 top-0 w-full" />
+          <img src={p.desktop} alt={`${p.title}: widok na komputerze`} loading="lazy" className="absolute left-0 top-0 w-full" />
         </div>
       </div>
       {/* Telefon */}
       <div className="absolute -bottom-8 -right-2 w-[26%] min-w-[96px] overflow-hidden rounded-[22px] border-[5px] border-forest bg-forest shadow-2xl sm:-right-6">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={p.mobile} alt={`${p.title} — widok na telefonie`} className="block aspect-[390/844] w-full object-cover object-top" />
+        <img src={p.mobile} alt={`${p.title}: widok na telefonie`} className="block aspect-[390/844] w-full object-cover object-top" />
       </div>
       {p.scroll && (
         <p className="mt-3 hidden text-xs text-muted lg:block">Najedź kursorem, żeby przewinąć stronę</p>
@@ -101,7 +101,7 @@ export function Work() {
               Tak może wyglądać <em>strona Twojej branży.</em>
             </h3>
             <p className="mt-4 max-w-2xl text-ink/70">
-              Działające wersje pokazowe dla fikcyjnych firm — kliknij i przetestuj rezerwację, kalendarz czy koszyk.
+              Działające wersje pokazowe dla fikcyjnych firm. Kliknij i przetestuj rezerwację, kalendarz czy koszyk.
             </p>
           </Reveal>
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
@@ -116,7 +116,7 @@ export function Work() {
                     </div>
                     <div className="scrollshot relative aspect-[16/10] overflow-hidden">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={`/koncepcje/miniatury/${c.slug}.jpg`} alt={`${c.name} — podgląd`} loading="lazy" className="absolute left-0 top-0 w-full" />
+                      <img src={`/koncepcje/miniatury/${c.slug}.jpg`} alt={`${c.name}: podgląd`} loading="lazy" className="absolute left-0 top-0 w-full" />
                     </div>
                   </div>
                   <div className="mt-5 flex items-start justify-between gap-4">
@@ -142,7 +142,7 @@ export function Work() {
                 Tu może być <em className="text-clay">Twoja firma.</em>
               </p>
               <p className="mt-2 max-w-xl text-ink/70">
-                Zostały 3 miejsca w cenie pilotażowej: strona za 1 000 zł zamiast 1 500 zł — w zamian za opinię i zgodę na
+                Zostały 3 miejsca w cenie pilotażowej: strona za 1 000 zł zamiast 1 500 zł, w zamian za opinię i zgodę na
                 pokazanie projektu w portfolio.
               </p>
             </div>

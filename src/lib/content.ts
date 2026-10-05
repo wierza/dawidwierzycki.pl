@@ -55,7 +55,7 @@ export const PROJECTS: Project[] = [
     problem:
       "Sprzedaż e-booka dla adwokatów bez ręcznej obsługi: bez wysyłania plików, przepisywania danych do faktur i dopisywania ludzi do listy mailingowej.",
     solution:
-      "Sklep, który sam przyjmuje płatność, wysyła e-book, wystawia fakturę i zapisuje klienta do newslettera — a formularz zamówienia ma tylko trzy pola.",
+      "Sklep, który sam przyjmuje płatność, wysyła e-book, wystawia fakturę i zapisuje klienta do newslettera. Formularz zamówienia ma przy tym tylko trzy pola.",
     features: [
       "Płatności BLIK, kartą, Apple Pay i Google Pay",
       "Krótki formularz: e-mail, imię i nazwisko; dane do faktury tylko na życzenie (ze sprawdzaniem NIP)",
@@ -78,7 +78,7 @@ export const PROJECTS: Project[] = [
     problem:
       "Agencja pracująca z prawnikami, klinikami i agentami nieruchomości potrzebowała strony, która buduje zaufanie, zanim klient zadzwoni.",
     solution:
-      "Szybka strona z osobnymi podstronami dla każdej branży, blogiem eksperckim i rezerwacją rozmowy w kalendarzu — w trzech językach.",
+      "Szybka strona z osobnymi podstronami dla każdej branży, blogiem eksperckim i rezerwacją rozmowy w kalendarzu, w trzech językach.",
     features: [
       "Podstrony dla prawników, klinik i nieruchomości",
       "Blog ekspercki przyjazny Google i wyszukiwarkom AI",
@@ -147,7 +147,7 @@ export const PACKAGES = [
     price: 3000,
     pilot: null,
     time: "14 dni roboczych",
-    lead: "Dla firm, które chcą sprzedawać online — produkty, usługi lub pliki do pobrania.",
+    lead: "Dla firm, które chcą sprzedawać online: produkty, usługi lub pliki do pobrania.",
     items: [
       "Wszystko z pakietu Strona",
       "Do 20 produktów z kategoriami",
@@ -179,7 +179,7 @@ export const CARE = [
 
 export const STEPS = [
   { title: "Rozmowa", time: "20 minut", text: "Opowiadasz o firmie i klientach. Mówię, co ma sens, ile to kosztuje i kiedy będzie gotowe." },
-  { title: "Formularz i zaliczka", time: "1 dzień", text: "Wypełniasz krótki formularz (usługi, zdjęcia, dane). Wpłacasz 50% — rezerwuję termin." },
+  { title: "Formularz i zaliczka", time: "1 dzień", text: "Wypełniasz krótki formularz (usługi, zdjęcia, dane). Wpłacasz 50%, a ja rezerwuję termin." },
   { title: "Budowa", time: "strona 7 dni · sklep 14 dni", text: "Buduję stronę lub sklep. W trakcie dostajesz link do podglądu, żeby nic Cię nie zaskoczyło." },
   { title: "Poprawki i start", time: "1–2 dni", text: "Wprowadzam Twoje uwagi, podpinam domenę i Google. Dostajesz nagranie, jak samodzielnie zmieniać treści." },
 ];
@@ -187,11 +187,11 @@ export const STEPS = [
 export const FAQ = [
   {
     q: "Ile trwa zrobienie strony?",
-    a: "Strona: 7 dni roboczych, sklep: 14. Liczę od dnia, w którym dostanę wypełniony formularz i zdjęcia — najczęściej to właśnie materiały decydują o tempie.",
+    a: "Strona: 7 dni roboczych, sklep: 14. Liczę od dnia, w którym dostanę wypełniony formularz i zdjęcia. Najczęściej to właśnie materiały decydują o tempie.",
   },
   {
     q: "Kto płaci za domenę i hosting?",
-    a: "Ty — na swoim koncie, żeby strona zawsze była Twoja. Zwykle to kilkanaście–kilkadziesiąt złotych miesięcznie. Pomagam wybrać i wszystko konfiguruję.",
+    a: "Ty, na swoim koncie, żeby strona zawsze była Twoja. Zwykle to kilkanaście–kilkadziesiąt złotych miesięcznie. Pomagam wybrać i wszystko konfiguruję.",
   },
   {
     q: "Czy będę mógł sam zmieniać treści?",
@@ -199,23 +199,23 @@ export const FAQ = [
   },
   {
     q: "Czy w cenie jest blog?",
-    a: "Tak — blog gotowy do pisania (lista wpisów, kategorie, szablon artykułu) liczy się jako jedna z 5 podstron, a wpisy dodajesz sam. Jeśli nie masz czasu pisać, przygotuję artykuły pod frazy Twoich klientów — 150 zł za tekst (ok. 1 000–1 500 słów).",
+    a: "Tak. Blog gotowy do pisania (lista wpisów, kategorie, szablon artykułu) liczy się jako jedna z 5 podstron, a wpisy dodajesz sam. Jeśli nie masz czasu pisać, przygotuję artykuły pod frazy Twoich klientów. Cena: 150 zł za tekst (ok. 1 000–1 500 słów).",
   },
   {
     q: "Nie mam tekstów ani zdjęć. Co wtedy?",
-    a: "Na podstawie formularza przygotuję teksty do Twojej akceptacji. Jeśli wolisz, żebym napisał wszystko od zera po rozmowie — to dodatek za 300 zł. Zdjęcia mogą być z telefonu albo z banku zdjęć.",
+    a: "Na podstawie formularza przygotuję teksty do Twojej akceptacji. Jeśli wolisz, żebym napisał wszystko od zera po rozmowie, to dodatek za 300 zł. Zdjęcia mogą być z telefonu albo z banku zdjęć.",
   },
   {
     q: "Czy strona będzie widoczna w Google?",
-    a: "W cenie dostajesz SEO na start: tytuły i opisy pod frazy Twoich klientów (np. „fizjoterapeuta Poznań”), zgłoszenie strony w Google Search Console, dane lokalnej firmy dla Google, połączenie z wizytówką Google i szybkie ładowanie. Nikt uczciwy nie zagwarantuje pierwszego miejsca — regularne pozycjonowanie (artykuły, linki, analiza konkurencji) to osobna usługa, którą mogę wycenić.",
+    a: "W cenie dostajesz SEO na start: tytuły i opisy pod frazy Twoich klientów (np. „fizjoterapeuta Poznań”), zgłoszenie strony w Google Search Console, dane lokalnej firmy dla Google, połączenie z wizytówką Google i szybkie ładowanie. Nikt uczciwy nie zagwarantuje pierwszego miejsca. Regularne pozycjonowanie (artykuły, linki, analiza konkurencji) to osobna usługa, którą mogę wycenić.",
   },
   {
     q: "Jakie płatności obsłuży sklep?",
-    a: "BLIK, karty, Apple Pay i Google Pay — przez Stripe albo Przelewy24. Konto płatności zakładasz na swoją firmę, ja je podłączam i testuję.",
+    a: "BLIK, karty, Apple Pay i Google Pay, przez Stripe albo Przelewy24. Konto płatności zakładasz na swoją firmę, ja je podłączam i testuję.",
   },
   {
     q: "Czy strona będzie zgodna z RODO?",
-    a: "Tak: polityka prywatności, baner cookies, zgody przy formularzach. Regulamin sklepu przygotowuję na sprawdzonym wzorze — przy nietypowej sprzedaży warto dać go jeszcze do przejrzenia prawnikowi.",
+    a: "Tak: polityka prywatności, baner cookies, zgody przy formularzach. Regulamin sklepu przygotowuję na sprawdzonym wzorze. Przy nietypowej sprzedaży warto dać go jeszcze do przejrzenia prawnikowi.",
   },
   {
     q: "Co, jeśli coś przestanie działać?",
@@ -223,6 +223,6 @@ export const FAQ = [
   },
   {
     q: "Jak wygląda płatność?",
-    a: "50% zaliczki na start i 50% po oddaniu strony. Wystawiam fakturę bez VAT — korzystam ze zwolnienia podmiotowego (art. 113 ust. 1 ustawy o VAT), więc podane ceny są cenami końcowymi.",
+    a: "50% zaliczki na start i 50% po oddaniu strony. Wystawiam fakturę bez VAT, bo korzystam ze zwolnienia podmiotowego (art. 113 ust. 1 ustawy o VAT), więc podane ceny są cenami końcowymi.",
   },
 ];

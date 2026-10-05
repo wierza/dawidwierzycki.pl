@@ -57,10 +57,10 @@ export function About() {
             </p>
             <p>
               Dlatego razem ze stroną dostajesz to, czego zwykle brakuje: płatności, analitykę, formularze, które naprawdę
-              trafiają do Ciebie, i zgodność z RODO. Pracuję bezpośrednio z Tobą — bez pośredników i bez juniorów.
+              trafiają do Ciebie, i zgodność z RODO. Pracuję bezpośrednio z Tobą, bez pośredników i bez juniorów.
             </p>
             <p>
-              Programowania uczyłem się na 800-godzinnym bootcampie Full Stack Developer w Kodilli — dlatego oprócz stron
+              Programowania uczyłem się na 800-godzinnym bootcampie Full Stack Developer w Kodilli. Dlatego oprócz stron
               na WordPressie robię też rzeczy w kodzie: React, Next.js, Node.js, integracje i bazy danych.
             </p>
           </div>
@@ -96,7 +96,7 @@ export function Booking() {
             może być gotowe.
           </p>
           <ul className="mt-8 space-y-3 text-ink/80">
-            {["Rozmowa online — wystarczy telefon lub komputer", "Konkretna wycena i termin po rozmowie", "Bez presji i bez ukrytych kosztów"].map((t) => (
+            {["Rozmowa online: wystarczy telefon lub komputer", "Konkretna wycena i termin po rozmowie", "Bez presji i bez ukrytych kosztów"].map((t) => (
               <li key={t} className="flex gap-3">
                 <span className="mt-2 size-1.5 shrink-0 rounded-full bg-clay" />
                 {t}

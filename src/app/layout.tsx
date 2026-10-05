@@ -24,7 +24,7 @@ const SITE = "https://dawidwierzycki.pl";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: "Dawid Wierzycki — strony i sklepy internetowe dla firm",
+  title: "Dawid Wierzycki | Strony i sklepy internetowe dla firm",
   description:
     "Strona dla Twojej firmy w 7 dni, sklep w 14. Płatności BLIK, RODO, Google Analytics i wizytówka Google w cenie. Strona od 1 500 zł, sklep od 3 000 zł.",
   alternates: { canonical: "/" },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     locale: "pl_PL",
     url: SITE,
     siteName: "Dawid Wierzycki",
-    title: "Strona albo sklep, który sprzedaje — gotowy w 7 dni",
+    title: "Strona albo sklep, który sprzedaje. Gotowy w 7 dni",
     description: "Strony i sklepy internetowe dla małych firm. Płatności, RODO i analityka w cenie.",
     images: [{ url: "/og.jpg", width: 1200, height: 630 }],
   },
@@ -47,7 +47,7 @@ export const viewport: Viewport = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "Dawid Wierzycki — strony i sklepy internetowe",
+  name: "Dawid Wierzycki, strony i sklepy internetowe",
   url: SITE,
   email: "dawid@wierzycki.pl",
   image: `${SITE}/dawid.jpg`,

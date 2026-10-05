@@ -4,7 +4,7 @@ import { Footer } from "@/components/sections";
 import { COMPANY, CONTACT } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Polityka prywatności — Dawid Wierzycki",
+  title: "Polityka prywatności | Dawid Wierzycki",
   alternates: { canonical: "/polityka-prywatnosci/" },
   robots: { index: false },
 };
@@ -28,20 +28,20 @@ const SECTIONS: { h: string; p: string[] }[] = [
     h: "2. Jakie dane, w jakim celu i na jakiej podstawie",
     p: [
       "Strona nie ma kont użytkowników ani formularzy zapisujących dane na serwerze. Twoje dane (imię i nazwisko, adres e-mail, telefon, nazwa firmy, treść wiadomości lub odpowiedzi w formularzu rezerwacji) przetwarzam, gdy napiszesz do mnie e-mail, wyślesz wycenę z kalkulatora albo umówisz rozmowę w kalendarzu.",
-      "Cele i podstawy prawne: odpowiedź na wiadomość, rozmowa i przygotowanie oferty — działania przed zawarciem umowy na Twoje żądanie (art. 6 ust. 1 lit. b RODO); wykonanie i rozliczenie umowy (art. 6 ust. 1 lit. b i c RODO — obowiązki podatkowe i księgowe); ustalenie, dochodzenie lub obrona roszczeń oraz kontakt w sprawie złożonej oferty (art. 6 ust. 1 lit. f RODO — mój prawnie uzasadniony interes); statystyki i reklamy — wyłącznie na podstawie Twojej zgody (art. 6 ust. 1 lit. a RODO), opisane w punkcie 6.",
+      "Cele i podstawy prawne: odpowiedź na wiadomość, rozmowa i przygotowanie oferty, czyli działania przed zawarciem umowy na Twoje żądanie (art. 6 ust. 1 lit. b RODO); wykonanie i rozliczenie umowy (art. 6 ust. 1 lit. b i c RODO, czyli obowiązki podatkowe i księgowe); ustalenie, dochodzenie lub obrona roszczeń oraz kontakt w sprawie złożonej oferty (art. 6 ust. 1 lit. f RODO, czyli mój prawnie uzasadniony interes); statystyki i reklamy wyłącznie na podstawie Twojej zgody (art. 6 ust. 1 lit. a RODO), opisane w punkcie 6.",
       "Podanie danych jest dobrowolne, ale bez nich nie mogę odpowiedzieć na wiadomość, umówić rozmowy ani przygotować oferty. Nie podejmuję wobec Ciebie decyzji opartych wyłącznie na zautomatyzowanym przetwarzaniu.",
     ],
   },
   {
     h: "3. Jak długo przechowuję dane",
     p: [
-      "Korespondencję i dane z rezerwacji bez zawartej umowy — do 12 miesięcy od ostatniego kontaktu. Dokumenty związane z umową i rozliczeniem — przez okres wymagany przepisami podatkowymi (5 lat od końca roku, w którym powstał obowiązek podatkowy), a w zakresie roszczeń — do upływu ich przedawnienia. Dane z cookies — przez okresy podane w tabeli w punkcie 6 lub do wycofania zgody.",
+      "Korespondencję i dane z rezerwacji bez zawartej umowy przechowuję do 12 miesięcy od ostatniego kontaktu. Dokumenty związane z umową i rozliczeniem przechowuję przez okres wymagany przepisami podatkowymi (5 lat od końca roku, w którym powstał obowiązek podatkowy), a w zakresie roszczeń do upływu ich przedawnienia. Dane z cookies przechowuję przez okresy podane w tabeli w punkcie 6 lub do wycofania zgody.",
     ],
   },
   {
     h: "4. Komu przekazuję dane",
     p: [
-      "Dostawcom usług, z których korzystam, wyłącznie w zakresie niezbędnym: hosting strony i poczty — Hostinger International Ltd.; kalendarz rezerwacji — Cal.com, Inc. (USA); spotkania online i kalendarz — Google Ireland Ltd. (Google Meet, Kalendarz Google); fakturowanie — IFIRMA S.A. (Wrocław) oraz biuro rachunkowe; statystyki i reklamy, tylko za Twoją zgodą — Google Ireland Ltd. (Google Analytics) i Meta Platforms Ireland Ltd. (piksel Meta).",
+      "Dostawcom usług, z których korzystam, wyłącznie w zakresie niezbędnym. Są to: Hostinger International Ltd. (hosting strony i poczty); Cal.com, Inc., USA (kalendarz rezerwacji); Google Ireland Ltd. (spotkania online w Google Meet i Kalendarz Google); IFIRMA S.A. z Wrocławia (fakturowanie) oraz biuro rachunkowe. Tylko za Twoją zgodą dane otrzymują także Google Ireland Ltd. (Google Analytics) i Meta Platforms Ireland Ltd. (piksel Meta).",
       "Nie sprzedaję danych i nie udostępniam ich innym firmom w celach marketingowych.",
     ],
   },
@@ -54,9 +54,9 @@ const SECTIONS: { h: string; p: string[] }[] = [
   {
     h: "6. Pliki cookies, Google Analytics i piksel Meta",
     p: [
-      "Strona używa plików cookies niezbędnych do działania oraz — tylko po kliknięciu „Akceptuję” w banerze — cookies analitycznych (Google Analytics 4) i marketingowych (piksel Meta). Bez zgody GA4 działa w trybie zgody Google: nie zapisuje cookies i wysyła wyłącznie anonimowe sygnały bez identyfikatorów, a piksel Meta w ogóle się nie ładuje.",
+      "Strona używa plików cookies niezbędnych do działania oraz, tylko po kliknięciu „Akceptuję” w banerze, cookies analitycznych (Google Analytics 4) i marketingowych (piksel Meta). Bez zgody GA4 działa w trybie zgody Google: nie zapisuje cookies i wysyła wyłącznie anonimowe sygnały bez identyfikatorów, a piksel Meta w ogóle się nie ładuje.",
       "Google Analytics pokazuje mi, z których podstron korzystasz i co działa (np. ile osób umawia rozmowę lub wysyła wycenę). Piksel Meta pozwala mierzyć skuteczność reklam na Facebooku i Instagramie oraz pokazywać reklamy osobom, które odwiedziły stronę. W zakresie zbierania i przekazywania danych przez piksel jestem współadministratorem razem z Meta Platforms Ireland Ltd.; dalsze przetwarzanie danych przez Meta opisuje polityka prywatności Meta (facebook.com/privacy/policy).",
-      "Zgodę możesz w każdej chwili wycofać przyciskiem „Ustawienia cookies” w stopce strony — wycofanie nie wpływa na zgodność z prawem przetwarzania przed jego dokonaniem. Możesz też zarządzać cookies w ustawieniach przeglądarki. Serwer zapisuje standardowe logi techniczne (m.in. adres IP, czas wizyty) w celu zapewnienia bezpieczeństwa (art. 6 ust. 1 lit. f RODO).",
+      "Zgodę możesz w każdej chwili wycofać przyciskiem „Ustawienia cookies” w stopce strony. Wycofanie nie wpływa na zgodność z prawem przetwarzania przed jego dokonaniem. Możesz też zarządzać cookies w ustawieniach przeglądarki. Serwer zapisuje standardowe logi techniczne (m.in. adres IP, czas wizyty) w celu zapewnienia bezpieczeństwa (art. 6 ust. 1 lit. f RODO).",
     ],
   },
   {

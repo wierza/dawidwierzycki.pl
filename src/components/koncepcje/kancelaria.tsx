@@ -19,7 +19,7 @@ const AREAS = [
     icon: ScrollText,
     title: "Sprawy spadkowe",
     lead: "Stwierdzenie nabycia spadku, zachowek, dział spadku.",
-    items: ["Stwierdzenie nabycia spadku", "Zachowek — dochodzenie i obrona", "Dział spadku i zniesienie współwłasności", "Odrzucenie spadku z długami"],
+    items: ["Stwierdzenie nabycia spadku", "Zachowek: dochodzenie i obrona", "Dział spadku i zniesienie współwłasności", "Odrzucenie spadku z długami"],
   },
   {
     icon: Building2,
@@ -30,10 +30,10 @@ const AREAS = [
 ];
 
 const FAQ = [
-  ["Ile kosztuje pierwsza konsultacja?", "Konsultacja trwa do 60 minut. Jej koszt podaję przy umawianiu terminu — po rozmowie otrzymujesz pisemną propozycję wynagrodzenia za prowadzenie sprawy."],
+  ["Ile kosztuje pierwsza konsultacja?", "Konsultacja trwa do 60 minut. Jej koszt podaję przy umawianiu terminu, a po rozmowie otrzymujesz pisemną propozycję wynagrodzenia za prowadzenie sprawy."],
   ["Czy mogę skonsultować się online?", "Tak. Spotykamy się przez bezpieczne połączenie wideo, a dokumenty możesz przesłać wcześniej e-mailem."],
   ["Jakie dokumenty przygotować?", "Wszystko, co dotyczy sprawy: umowy, pisma z sądu, korespondencję. Po umówieniu terminu otrzymasz krótką listę."],
-  ["Czy informacje o mojej sprawie są poufne?", "Tak. Adwokata obowiązuje tajemnica adwokacka — bez wyjątków i bez ograniczenia w czasie."],
+  ["Czy informacje o mojej sprawie są poufne?", "Tak. Adwokata obowiązuje tajemnica adwokacka, bez wyjątków i bez ograniczenia w czasie."],
 ];
 
 function workdays(n: number) {
@@ -133,7 +133,7 @@ export function Kancelaria() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <p className="text-sm uppercase tracking-[0.25em] text-[#a8834a]">Wrocław · konsultacje także online</p>
           <h1 className="mt-5 font-(family-name:--c-display) text-5xl font-light leading-[1.05] sm:text-7xl">
-            Prawo rodzinne i spadkowe <em className="text-[#a8834a]">— spokojnie i konkretnie.</em>
+            Prawo rodzinne i spadkowe. <em className="text-[#a8834a]">Spokojnie i konkretnie.</em>
           </h1>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-[#1d2a3a]/70">
             Pomagam przejść przez rozwód, sprawy spadkowe i zakup nieruchomości. Na pierwszym spotkaniu dowiesz się, jakie masz
@@ -188,7 +188,7 @@ export function Kancelaria() {
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {[
             ["Konsultacja", "Poznaję Twoją sytuację, analizuję dokumenty i mówię wprost, jakie są szanse i ryzyka."],
-            ["Plan i wycena", "Otrzymujesz pisemny plan działania i jasną propozycję wynagrodzenia — bez niespodzianek."],
+            ["Plan i wycena", "Otrzymujesz pisemny plan działania i jasną propozycję wynagrodzenia, bez niespodzianek."],
             ["Prowadzenie sprawy", "Przygotowuję pisma i reprezentuję Cię w sądzie. Wiesz, co się dzieje na każdym etapie."],
           ].map(([t, d], i) => (
             <div key={t} className="border-t border-[#1d2a3a]/15 pt-6">
@@ -212,7 +212,7 @@ export function Kancelaria() {
           <h2 className="mt-3 font-(family-name:--c-display) text-4xl font-light sm:text-5xl">Adwokat, który tłumaczy prawo na <em>ludzki język.</em></h2>
           <p className="mt-6 text-lg leading-relaxed text-[#1d2a3a]/70">
             Jestem adwokatem wpisanym na listę Izby Adwokackiej we Wrocławiu. Zajmuję się sprawami, w których obok prawa liczą
-            się emocje — dlatego dbam o to, żeby klient zawsze rozumiał, co dzieje się w jego sprawie.
+            się emocje. Dlatego dbam o to, żeby klient zawsze rozumiał, co dzieje się w jego sprawie.
           </p>
           <ul className="mt-6 space-y-2">
             {["Mediacje rodzinne przed skierowaniem sprawy do sądu", "Konsultacje w języku polskim i angielskim", "Kontakt mailowy w ciągu 24 godzin"].map((t) => (

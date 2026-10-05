@@ -6,7 +6,7 @@ const display = Fraunces({ subsets: ["latin", "latin-ext"], weight: ["300", "400
 const body = Inter({ subsets: ["latin", "latin-ext"], variable: "--c-body" });
 
 export const metadata: Metadata = {
-  title: "Kancelaria Adwokacka — projekt koncepcyjny strony",
+  title: "Kancelaria Adwokacka | projekt koncepcyjny strony",
   description: "Koncept strony kancelarii: specjalizacje, umawianie konsultacji online, FAQ i treści zgodne z etyką zawodową.",
   robots: { index: false },
 };

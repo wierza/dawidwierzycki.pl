@@ -6,7 +6,7 @@ const display = Cormorant_Garamond({ subsets: ["latin", "latin-ext"], weight: ["
 const body = Manrope({ subsets: ["latin", "latin-ext"], variable: "--c-body" });
 
 export const metadata: Metadata = {
-  title: "Bistro Sezon — projekt koncepcyjny strony restauracji",
+  title: "Bistro Sezon | projekt koncepcyjny strony restauracji",
   description: "Koncept strony restauracji: menu, rezerwacja stolika online, galeria i mapa dojazdu.",
   robots: { index: false },
 };

@@ -31,9 +31,9 @@ const MENU: Record<string, { name: string; desc: string; price: number; tag?: st
 };
 
 const HOURS = [
-  ["Pon – Czw", "8:00 – 22:00"],
-  ["Pt – Sob", "8:00 – 23:30"],
-  ["Niedziela", "9:00 – 21:00"],
+  ["Pon–Czw", "8:00–22:00"],
+  ["Pt–Sob", "8:00–23:30"],
+  ["Niedziela", "9:00–21:00"],
 ];
 
 const SLOTS = ["12:00", "13:00", "14:00", "17:30", "18:30", "19:30", "20:30"];
@@ -177,7 +177,7 @@ export function Restauracja() {
           <h2 className="mt-4 font-(family-name:--c-display) text-5xl leading-none sm:text-6xl">Menu zmienia się <em>co sześć tygodni.</em></h2>
           <p className="mt-6 text-lg leading-relaxed text-[#efe6d8]/75">
             Kupujemy od rolników z Dolnego Śląska, pieczemy własny chleb na zakwasie i robimy przetwory na zimę. Dlatego
-            karta jest krótka — ale każde danie jest dopracowane.
+            karta jest krótka, ale każde danie jest dopracowane.
           </p>
           <div className="mt-10 grid grid-cols-3 gap-4 border-t border-[#efe6d8]/15 pt-8">
             {[["12", "dostawców z regionu"], ["48 h", "fermentacji zakwasu"], ["0", "mrożonek"]].map(([n, t]) => (
@@ -240,7 +240,7 @@ export function Restauracja() {
         <div className="grid gap-6 md:grid-cols-3">
           {[
             ["Najlepsze pierogi we Wrocławiu. I wreszcie miejsce, gdzie karta nie ma 40 pozycji.", "Kasia"],
-            ["Byliśmy na rocznicy — obsługa zapamiętała, że świętujemy. Wrócimy jesienią.", "Tomek i Ola"],
+            ["Byliśmy na rocznicy, a obsługa zapamiętała, że świętujemy. Wrócimy jesienią.", "Tomek i Ola"],
             ["Śniadania w weekend to obowiązkowy punkt. Szakszuka jest rewelacyjna.", "Marta"],
           ].map(([q, a]) => (
             <figure key={a} className="rounded-3xl border border-[#efe6d8]/10 p-8">
@@ -257,7 +257,7 @@ export function Restauracja() {
         <div>
           <p className="text-sm uppercase tracking-[0.3em] text-[#e0a46a]">Rezerwacja</p>
           <h2 className="mt-4 font-(family-name:--c-display) text-5xl leading-none sm:text-6xl">Zarezerwuj stolik <em>w 20 sekund.</em></h2>
-          <p className="mt-6 text-[#efe6d8]/70">Grupy powyżej 12 osób i kolacje firmowe — zadzwoń, przygotujemy osobne menu.</p>
+          <p className="mt-6 text-[#efe6d8]/70">Grupy powyżej 12 osób i kolacje firmowe? Zadzwoń, przygotujemy osobne menu.</p>
         </div>
         <Reservation />
       </section>

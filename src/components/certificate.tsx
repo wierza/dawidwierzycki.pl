@@ -26,7 +26,7 @@ export function CertificateBadge() {
           <Award className="size-6" />
         </span>
         <span>
-          <span className="block font-medium">Full Stack Developer — Kodilla</span>
+          <span className="block font-medium">Full Stack Developer · Kodilla</span>
           <span className="block text-sm text-muted">Bootcamp 800 godzin · 2023–2024 · zobacz zaświadczenie</span>
         </span>
       </button>

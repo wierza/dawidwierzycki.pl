@@ -29,7 +29,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.1, ease }}
             className="font-display text-[44px] leading-[1.02] tracking-[-0.01em] sm:text-6xl lg:text-[76px]"
           >
-            Strona albo sklep, który <em className="text-clay">sprzedaje</em> — gotowy w&nbsp;7&nbsp;dni.
+            Strona albo sklep, który <em className="text-clay">sprzedaje</em>. Gotowy w&nbsp;7&nbsp;dni.
           </motion.h1>
 
           <motion.p

@@ -6,7 +6,7 @@ const display = Young_Serif({ subsets: ["latin", "latin-ext"], weight: "400", va
 const body = Space_Grotesk({ subsets: ["latin", "latin-ext"], variable: "--c-body" });
 
 export const metadata: Metadata = {
-  title: "Ziarno & Żar — projekt koncepcyjny sklepu internetowego",
+  title: "Ziarno & Żar | projekt koncepcyjny sklepu internetowego",
   description: "Koncept sklepu palarni kawy: produkty z filtrami, koszyk, dostawa do paczkomatu i płatność BLIK.",
   robots: { index: false },
 };

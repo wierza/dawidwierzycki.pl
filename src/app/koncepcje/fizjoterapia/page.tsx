@@ -6,7 +6,7 @@ const display = DM_Serif_Display({ subsets: ["latin", "latin-ext"], weight: "400
 const body = DM_Sans({ subsets: ["latin", "latin-ext"], variable: "--c-body" });
 
 export const metadata: Metadata = {
-  title: "Studio Ruchu — projekt koncepcyjny strony gabinetu fizjoterapii",
+  title: "Studio Ruchu | projekt koncepcyjny strony gabinetu fizjoterapii",
   description: "Koncept strony gabinetu: cennik zabiegów, zespół, rezerwacja wizyty online krok po kroku.",
   robots: { index: false },
 };

@@ -15,7 +15,7 @@ export function Pricing() {
             Stała cena. <em className="text-clay-soft">Bez</em> „to zależy”.
           </h2>
           <p className="mt-5 max-w-2xl text-lg text-paper/70">
-            Wiesz, ile zapłacisz, zanim zaczniemy. Domenę i hosting opłacasz na swoim koncie — strona zawsze należy do Ciebie.
+            Wiesz, ile zapłacisz, zanim zaczniemy. Domenę i hosting opłacasz na swoim koncie, więc strona zawsze należy do Ciebie.
           </p>
         </Reveal>
 
@@ -41,7 +41,7 @@ export function Pricing() {
                 </div>
                 {pkg.pilot && (
                   <p className="mt-3 inline-flex w-fit rounded-full bg-clay-soft px-3 py-1 text-sm text-clay">
-                    Cena pilotażowa: {zl(pkg.pilot)} — zostały 3 miejsca
+                    Cena pilotażowa: {zl(pkg.pilot)} · zostały 3 miejsca
                   </p>
                 )}
 
@@ -69,7 +69,7 @@ export function Pricing() {
 
         <Reveal>
           <p className="mt-10 text-center text-sm text-paper/60">
-            Potrzebujesz czegoś nietypowego — aplikacji, kalkulatora, strony z wyjątkowymi animacjami?{" "}
+            Potrzebujesz czegoś nietypowego, np. aplikacji, kalkulatora albo strony z wyjątkowymi animacjami?{" "}
             <a href={contactHref("Projekt indywidualny")} className="text-paper underline underline-offset-4 hover:text-clay-soft">
               Wyceniam indywidualnie
             </a>

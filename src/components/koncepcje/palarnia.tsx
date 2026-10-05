@@ -118,7 +118,7 @@ function Checkout({ total, onClose, onDone }: { total: number; onClose: () => vo
                   placeholder="000 000"
                   className="mt-2 w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-center text-2xl tracking-[0.4em]"
                 />
-                <p className="mt-2 text-xs text-[#2b1d16]/50">Wersja demo — wpisz dowolne 6 cyfr.</p>
+                <p className="mt-2 text-xs text-[#2b1d16]/50">Wersja demo: wpisz dowolne 6 cyfr.</p>
               </div>
             </div>
             <button disabled={blik.length !== 6} className="mt-5 w-full rounded-full py-4 text-white disabled:opacity-40" style={{ background: ORANGE }}>
@@ -213,8 +213,8 @@ export function Palarnia() {
           <div>
             <h2 className="font-(family-name:--c-display) text-4xl sm:text-5xl">Od zielonego ziarna do Twojej filiżanki.</h2>
             <p className="mt-6 text-lg leading-relaxed text-[#fbf7f0]/75">
-              Kupujemy kawy bezpośrednio od importerów, którzy znają farmerów z imienia. Palimy w małych partiach po 15 kg —
-              każdą partię degustujemy, zanim trafi do paczki.
+              Kupujemy kawy bezpośrednio od importerów, którzy znają farmerów z imienia. Palimy w małych partiach po 15 kg, a każdą partię degustujemy
+             , zanim trafi do paczki.
             </p>
           </div>
         </div>
