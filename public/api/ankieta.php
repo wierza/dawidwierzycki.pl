@@ -5,6 +5,10 @@ header('X-Robots-Tag: noindex');
 
 const TO = 'dawid@wierzycki.pl';
 const FROM = 'ankieta@dawidwierzycki.pl';
+const SMTP_HOST = 'ssl://smtp.hostinger.com';
+const SMTP_PORT = 465;
+// Hasło do skrzynki FROM leży w smtp-haslo.php (poza gitem): <?php return 'haslo';
+const SMTP_PASS_FILE = __DIR__ . '/smtp-haslo.php';
 
 function reply(int $code, array $body): void {
   http_response_code($code);
@@ -34,13 +38,58 @@ if ($name === '' || $summary === '' || !filter_var($email, FILTER_VALIDATE_EMAIL
 $subject = 'Ankieta: ' . $name . ($company !== '' ? ' (' . $company . ')' : '');
 $body = $summary . "\n\n--\nWysłano z dawidwierzycki.pl/ankieta, " . date('Y-m-d H:i') . "\nOdpowiedz na tego maila, żeby napisać do klienta.";
 
-$headers = implode("\r\n", [
+$headers = [
+  'Date: ' . date('r'),
   'From: =?UTF-8?B?' . base64_encode('Ankieta dawidwierzycki.pl') . '?= <' . FROM . '>',
+  'To: <' . TO . '>',
   'Reply-To: ' . $email,
+  'Subject: =?UTF-8?B?' . base64_encode($subject) . '?=',
+  'Message-ID: <' . bin2hex(random_bytes(12)) . '@dawidwierzycki.pl>',
   'MIME-Version: 1.0',
   'Content-Type: text/plain; charset=UTF-8',
-  'Content-Transfer-Encoding: 8bit',
-]);
+  'Content-Transfer-Encoding: base64',
+];
+$message = implode("\r\n", $headers) . "\r\n\r\n" . chunk_split(base64_encode($body));
 
-$sent = mail(TO, '=?UTF-8?B?' . base64_encode($subject) . '?=', $body, $headers, '-f' . FROM);
+$sent = smtp_send($message);
 reply($sent ? 200 : 500, ['ok' => $sent]);
+
+/** Wysyła gotową wiadomość przez SMTP Hostingera, logując się do skrzynki FROM. */
+function smtp_send(string $message): bool {
+  $pass = is_file(SMTP_PASS_FILE) ? include SMTP_PASS_FILE : '';
+  if (!is_string($pass) || $pass === '') { error_log('ankieta: brak hasła SMTP'); return false; }
+
+  $fp = @stream_socket_client(SMTP_HOST . ':' . SMTP_PORT, $errno, $errstr, 15);
+  if (!$fp) { error_log("ankieta: SMTP $errstr"); return false; }
+  stream_set_timeout($fp, 15);
+
+  $read = function () use ($fp): string {
+    $out = '';
+    while (($line = fgets($fp, 515)) !== false) {
+      $out .= $line;
+      if (strlen($line) < 4 || $line[3] === ' ') break;
+    }
+    return $out;
+  };
+  $cmd = function (string $c, int $expect) use ($fp, $read): bool {
+    fwrite($fp, $c . "\r\n");
+    $r = $read();
+    if ((int)substr($r, 0, 3) !== $expect) { error_log('ankieta: SMTP ' . trim($r)); return false; }
+    return true;
+  };
+
+  $ok = (int)substr($read(), 0, 3) === 220
+    && $cmd('EHLO dawidwierzycki.pl', 250)
+    && $cmd('AUTH LOGIN', 334)
+    && $cmd(base64_encode(FROM), 334)
+    && $cmd(base64_encode($pass), 235)
+    && $cmd('MAIL FROM:<' . FROM . '>', 250)
+    && $cmd('RCPT TO:<' . TO . '>', 250)
+    && $cmd('DATA', 354)
+    // Kropka na początku linii kończy DATA, więc ją podwajamy
+    && $cmd(preg_replace('/^\./m', '..', $message) . "\r\n.", 250);
+
+  @fwrite($fp, "QUIT\r\n");
+  fclose($fp);
+  return $ok;
+}

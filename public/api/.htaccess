@@ -1,0 +1,4 @@
+# Hasło SMTP nie może być dostępne z przeglądarki
+<Files "smtp-haslo.php">
+  Require all denied
+</Files>
