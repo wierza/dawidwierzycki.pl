@@ -56,7 +56,7 @@ function loadCal(w: Window) {
   w.Cal = cal;
 }
 
-export function CalEmbed({ className }: { className?: string }) {
+export function CalEmbed({ className, prefill }: { className?: string; prefill?: { name?: string; email?: string } }) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -73,7 +73,7 @@ export function CalEmbed({ className }: { className?: string }) {
     const ns = Cal.ns![CAL_NAMESPACE]!;
     ns("inline", {
       elementOrSelector: el,
-      config: { layout: "month_view", useSlotsViewOnSmallScreen: "true", theme: "light" },
+      config: { layout: "month_view", useSlotsViewOnSmallScreen: "true", theme: "light", ...prefill },
       calLink: CAL_LINK,
     });
     ns("ui", {
@@ -88,7 +88,7 @@ export function CalEmbed({ className }: { className?: string }) {
     });
 
     // Główna konwersja: rezerwacja rozmowy w kalendarzu
-    const onBooked = () => track("generate_lead", { method: "cal_rozmowa" }, "Lead");
+    const onBooked = () => track("generate_lead", { method: prefill ? "cal_po_ankiecie" : "cal_rozmowa" }, "Lead");
     ns("on", { action: "bookingSuccessfulV2", callback: onBooked });
 
     return () => {

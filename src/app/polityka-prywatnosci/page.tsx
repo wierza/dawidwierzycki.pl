@@ -27,7 +27,7 @@ const SECTIONS: { h: string; p: string[] }[] = [
   {
     h: "2. Jakie dane, w jakim celu i na jakiej podstawie",
     p: [
-      "Strona nie ma kont użytkowników ani formularzy zapisujących dane na serwerze. Twoje dane (imię i nazwisko, adres e-mail, telefon, nazwa firmy, treść wiadomości lub odpowiedzi w formularzu rezerwacji) przetwarzam, gdy napiszesz do mnie e-mail, wyślesz wycenę z kalkulatora albo umówisz rozmowę w kalendarzu.",
+      "Strona nie ma kont użytkowników ani formularzy zapisujących dane na serwerze. Twoje dane (imię i nazwisko, adres e-mail, telefon, nazwa firmy, treść wiadomości, odpowiedzi w ankiecie przed rozmową lub w formularzu rezerwacji) przetwarzam, gdy napiszesz do mnie e-mail, wyślesz wycenę z kalkulatora, wypełnisz ankietę albo umówisz rozmowę w kalendarzu. Odpowiedzi z ankiety trafiają do mnie wyłącznie jako e-mail.",
       "Cele i podstawy prawne: odpowiedź na wiadomość, rozmowa i przygotowanie oferty, czyli działania przed zawarciem umowy na Twoje żądanie (art. 6 ust. 1 lit. b RODO); wykonanie i rozliczenie umowy (art. 6 ust. 1 lit. b i c RODO, czyli obowiązki podatkowe i księgowe); ustalenie, dochodzenie lub obrona roszczeń oraz kontakt w sprawie złożonej oferty (art. 6 ust. 1 lit. f RODO, czyli mój prawnie uzasadniony interes); statystyki i reklamy wyłącznie na podstawie Twojej zgody (art. 6 ust. 1 lit. a RODO), opisane w punkcie 6.",
       "Podanie danych jest dobrowolne, ale bez nich nie mogę odpowiedzieć na wiadomość, umówić rozmowy ani przygotować oferty. Nie podejmuję wobec Ciebie decyzji opartych wyłącznie na zautomatyzowanym przetwarzaniu.",
     ],
