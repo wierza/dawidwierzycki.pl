@@ -17,7 +17,7 @@ const EMPTY: Contact = { name: "", company: "", email: "", phone: "", about: "",
 // Podstrony liczone do limitu 5 w pakiecie (start i kontakt zawsze są). Opinie, FAQ i współpraca to sekcje strony głównej.
 const PAGE_ITEMS = ["oferta", "cennik", "o-nas", "portfolio", "blog", "kariera"];
 
-/** Rekomendowany pakiet i orientacyjna cena na podstawie odpowiedzi. */
+/** Rekomendowany pakiet i stała cena na podstawie odpowiedzi. */
 function recommend(a: Answers) {
   const has = (q: string, o: string) => a[q]?.includes(o) ?? false;
   const pkg = has("cel", "sprzedaz") ? PACKAGES[1] : PACKAGES[0];
@@ -34,7 +34,7 @@ function recommend(a: Answers) {
   const later: string[] = [];
   if (has("rynek", "zagranica")) later.push("wersja w innym języku");
   if (has("dodatki", "platnosci") && pkg !== PACKAGES[1]) later.push("płatności online i zaliczki");
-  if (has("dodatki", "newsletter")) later.push("newsletter (lejek z e-bookiem od 1 500 zł)");
+  if (has("dodatki", "newsletter")) later.push("newsletter (lejek z e-bookiem 1 500 zł)");
   if (has("dodatki", "artykuly")) later.push("artykuły na blog (150 zł za tekst)");
   if (has("obecnosc", "strona")) later.push("przeniesienie treści z obecnej strony");
 
@@ -90,7 +90,7 @@ export function Survey() {
       "",
       "Rekomendacja z ankiety:",
       ...rec.lines.map(([n, v]) => `  ${n}: ${zl(v)}`),
-      `  Razem orientacyjnie: od ${zl(rec.total)}`,
+      `  Razem: ${zl(rec.total)}`,
       rec.care && rec.care.price ? `  Opieka: ${rec.care.label} (${rec.care.price} zł/mies.)` : "",
       rec.later.length ? `  Do wyceny na rozmowie: ${rec.later.join(", ")}` : "",
     ];
@@ -275,15 +275,15 @@ export function Survey() {
                   ))}
                 </ul>
                 <div className="mt-6 flex items-end justify-between gap-4">
-                  <span className="text-paper/70">Orientacyjnie</span>
-                  <span className="font-display text-5xl tabular-nums">od {zl(rec.total)}</span>
+                  <span className="text-paper/70">Stała cena</span>
+                  <span className="font-display text-5xl tabular-nums">{zl(rec.total)}</span>
                 </div>
                 {rec.care && rec.care.price > 0 && (
                   <p className="mt-2 text-right text-sm text-paper/60">+ {rec.care.label.toLowerCase()} {rec.care.price} zł / mies.</p>
                 )}
                 {rec.later.length > 0 && <p className="mt-6 text-sm text-paper/70">Do omówienia na rozmowie: {rec.later.join(", ")}.</p>}
                 <p className="mt-6 text-sm text-paper/60">
-                  Termin: {rec.pkg.time} od otrzymania materiałów. Płatność: 50% na start, 50% po oddaniu. Ostateczną wycenę wyślę na piśmie do 24 godzin po rozmowie.
+                  {rec.pkg === PACKAGES[0] ? "Strona gotowa w tydzień" : "Sklep gotowy w 2 tygodnie"} od otrzymania materiałów. Bez niespodzianek: cena nie rośnie w trakcie pracy. Płatność: 50% na start, 50% po oddaniu. Wycenę na piśmie wyślę do 24 godzin po rozmowie.
                 </p>
               </div>
 

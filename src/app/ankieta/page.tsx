@@ -21,8 +21,8 @@ export default function SurveyPage() {
           Opowiedz mi o firmie. <em>W 3 minuty.</em>
         </h1>
         <p className="mt-5 text-lg leading-relaxed text-ink/75">
-          Klikasz odpowiedzi, a ja przychodzę na rozmowę przygotowany. Na końcu zobaczysz rekomendowany pakiet z orientacyjną ceną i
-          wybierzesz termin.
+          Klikasz odpowiedzi, a ja przychodzę na rozmowę przygotowany. Na końcu zobaczysz rekomendowany pakiet ze stałą ceną i
+          wybierzesz termin rozmowy. Strona jest gotowa w tydzień.
         </p>
         <div className="mt-12">
           <Survey />

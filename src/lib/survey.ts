@@ -83,6 +83,7 @@ export const QUESTIONS: Question[] = [
     multi: true,
     options: [
       { id: "domena", label: "Domenę", desc: "adres strony, np. twojafirma.pl" },
+      { id: "hosting", label: "Hosting", desc: "serwer, na którym działa strona" },
       { id: "strona", label: "Obecną stronę", desc: "do odświeżenia albo przeniesienia" },
       { id: "google", label: "Wizytówkę Google", desc: "profil firmy w Mapach Google" },
       { id: "social", label: "Facebooka albo Instagrama", desc: "profil firmowy" },
@@ -118,9 +119,9 @@ export const QUESTIONS: Question[] = [
   {
     id: "termin",
     title: "Na kiedy potrzebujesz strony?",
-    lead: "Strona powstaje w 7 dni roboczych, sklep w 14, licząc od otrzymania materiałów i zaliczki.",
+    lead: "Strona jest gotowa w tydzień, sklep w 2 tygodnie, licząc od otrzymania materiałów i zaliczki.",
     options: [
-      { id: "pilne", label: "Jak najszybciej", desc: "w ciągu 2 tygodni" },
+      { id: "pilne", label: "Jak najszybciej", desc: "w ciągu tygodnia" },
       { id: "miesiac", label: "W ciągu miesiąca", desc: "" },
       { id: "kwartal", label: "W ciągu 1–3 miesięcy", desc: "" },
       { id: "bez-terminu", label: "Bez pośpiechu", desc: "na razie się rozglądam" },
