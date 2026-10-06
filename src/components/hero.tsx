@@ -69,7 +69,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="mt-9 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted"
           >
-            {["Strona od 1 500 zł", "Sklep od 3 000 zł", "Stała cena, bez niespodzianek"].map((t) => (
+            {["Strona 1 500 zł", "Sklep 3 000 zł", "Stała cena, bez niespodzianek"].map((t) => (
               <li key={t} className="flex items-center gap-2">
                 <Check className="size-4 text-clay" /> {t}
               </li>
